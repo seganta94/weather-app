@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import WeatherForm from './components/WeatherForm';
 import WeatherInfo from './components/WeatherInfo';
 import axios from 'axios';
@@ -42,8 +44,10 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <WeatherForm getWeather={getWeather} />
       {weather.length ? <WeatherInfo weather={weather} /> : <p>Loading...</p>}
+      <Footer />
     </div>
   );
 }
