@@ -13,7 +13,7 @@ const WeatherInfo = ({ weather }) => {
       <h3>Daily Temperature</h3>
       {weather.map((data, index) => (
         <div key={index}>
-          <p>Date: {new Date(data.time).toLocaleDateString()}</p>
+          <p>Date: {new Date(data.time).toLocaleDateString('en-GB', { timeZone: 'UTC' })}</p>
           <p>Max Temperature: {data.apparent_temperature_max} °C</p>
           <p>Min Temperature: {data.apparent_temperature_min} °C</p>
         </div>
