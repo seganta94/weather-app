@@ -8,7 +8,7 @@ const WeatherInfo = ({ weather }) => {
   }
 
   return (
-    <div>
+    <div className="weather-info">
       <h2>Weather Information</h2>
       <h3>Daily Temperature</h3>
       {weather.map((data, index) => (
