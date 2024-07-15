@@ -67,10 +67,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-<<<<<<< HEAD
-      <WeatherForm getWeather={getWeather} />
-      {weather.length ? <WeatherInfo weather={weather} /> : <p>Loading...</p>}
-=======
       <Instruction />
       <div className="container">
         <div className="left-form">
@@ -82,7 +78,6 @@ function App() {
           {weatherLoading ? <p>Loading...</p> : weather.length > 0 ? <WeatherInfo weather={weather} /> : null}
         </div>
       </div>
->>>>>>> second-api
       <Footer />
     </div>
   );
