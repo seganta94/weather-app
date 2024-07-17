@@ -18,7 +18,7 @@ function App() {
   const getLocation = async (city) => {
     setLocationLoading(true);
     try {
-      const response = await axios.get('http://127.0.0.1:8000/api/location', {
+      const response = await axios.get('http://44.211.171.166/api/location', {
         params: { city }
       });
       console.log("Response data:", response.data);
@@ -34,7 +34,7 @@ function App() {
   const getWeather = async (latitude, longitude) => {
     setWeatherLoading(true);
     try {
-      const response = await axios.get('http://127.0.0.1:8000/api/weather', {
+      const response = await axios.get('http://44.211.171.166/api/weather', {
         params: { latitude, longitude }
       });
 
